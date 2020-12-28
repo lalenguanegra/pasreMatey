@@ -1,0 +1,50 @@
+<form autocomplete="off">
+ 
+    <style>
+    body{
+    background-color: black;
+    }
+    form {
+    text-align: center;
+    }
+    input[type=submit] {
+    background-color: #b57edc;
+    width: 135px;
+    }
+    input[type="text"] {
+    width: 300px;
+    margin-top: 10px;
+    }
+    </style>
+    <title>Enter an Amazon URL</title>
+    <p align= "center"><img src="https://i.ibb.co/Cty5cNZ/sample.png"></p>
+    <form id="form" onsubmit="return false;">
+    <input type="text" id="userInput" value=''/>
+    <input type="submit" value="Parse Away, Matey!" style="font-weight:bold" onclick="sadie();" />
+    </form>
+     
+    <script>
+    function sadie() {
+    var input = document.getElementById("userInput").value;
+    var error = '<title>Error</title><style>*{padding:0px;margin:0px;}body{background: url(https://i.imgur.com/4Crzp4W.jpg) center bottom;background-size: cover;width: 100vw;height: 100vh;display:flex;justify-content: center;align-items: flex-end;font-family: Roboto, sans-serif;}.content{ color:#fff; opacity:0.3; text-align:center;user-select:none;}.title{ font-size:20vh;font-weight: 900;opacity:0.5;}.subtitle{font-size:6vh;font-weight:600;padding-bottom: 2vh;}.description{font-size:2vh;padding-bottom: 4vh;}</style><div class="content"><div class="title">404</div><div class="subtitle">NOTHING FOUND</div><div class="description">You are on the wrong path. Try to navigate to <input type=button value="Home" style="font-weight:bold" onClick="window.location.reload();"></div>  </div>'
+    if (input.match(/https\:\/\/www.amazon/)) {
+    socio()
+    } else {
+    document.write(error);
+    }
+    
+    }
+    function socio() {
+    var input = document.getElementById("userInput").value;
+    alert("I've cleaned up your URL, Matey.\nIt was full of rubbish!");
+    ayy();
+    }
+    function ayy() {
+    var input = document.getElementById("userInput").value;
+    str = input.split(" ").pop();
+    var url = new URL(str);
+    var result = (url.protocol + url.hostname + url.pathname);
+    var new_str = result.split("ref")[0];
+    alert(new_str);
+}
+    </script>
