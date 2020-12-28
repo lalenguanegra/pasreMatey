@@ -1,4 +1,5 @@
 <form autocomplete="off">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
  
     <style>
     body{
@@ -46,5 +47,13 @@
     var result = (url.protocol + url.hostname + url.pathname);
     var new_str = result.split("ref")[0];
     alert(new_str);
+    var input = document.createElement("input");
+   input.value = new_str;
+   document.body.appendChild(input);
+   input.select();
+   document.execCommand("copy");
+   document.body.removeChild(input);
+   
 }
+
     </script>
