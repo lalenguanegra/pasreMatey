@@ -2,6 +2,12 @@
 
 https://parsematey.netlify.app/
 
+![pirate1](https://github.com/lalenguanegra/pasreMatey/blob/main/pirate1.png)
+
+![pirate2](https://github.com/lalenguanegra/pasreMatey/blob/main/pirate2.png)
+
+![pirate3](https://github.com/lalenguanegra/pasreMatey/blob/main/pirate3.png)
+
 This script allows a user to remove any tracking information from within an Amazon URL quickly.
 
 https://github.com/lalenguanegra/pasreMatey/blob/main/pirate.sh
