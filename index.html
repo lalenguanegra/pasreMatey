@@ -10,7 +10,7 @@
     }
     input[type=submit] {
     background-color: #b57edc;
-    width: 135px;
+    width: 150px;
     }
     input[type="text"] {
     width: 300px;
@@ -27,7 +27,7 @@
     <script>
     function sadie() {
     var input = document.getElementById("userInput").value;
-    if (input.match(/https\:\/\/www.amazon/)) {
+    if (input.match(/https:\/\/www.amazon/)) {
     socio()
     } else {
     alert("That's not an Amazon link, Matey!\nTry Again!");
@@ -45,14 +45,14 @@
     var url = new URL(str);
     var result = (url.protocol + url.hostname + url.pathname);
     var new_str = result.split("ref")[0];
-    alert(new_str);
+    var res = new_str.replace("https:", "https://");
+    alert(res);
     var input = document.createElement("input");
-   input.value = new_str;
-   document.body.appendChild(input);
-   input.select();
-   document.execCommand("copy");
-   document.body.removeChild(input);
-   
+    input.value = res;
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand("copy");
+    document.body.removeChild(input);  
 }
 
     </script>
