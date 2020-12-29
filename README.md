@@ -2,6 +2,8 @@
 
 parseMatey! - The World's First Amazon URL sanitizer
 
+The results as copied to your device's clipboard.
+
 https://parsematey.netlify.app/
 
 ![pirate1](https://github.com/lalenguanegra/pasreMatey/blob/main/pirate1.png)
