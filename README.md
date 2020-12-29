@@ -1,5 +1,7 @@
 # pasreMatey
 
+parseMatey! - The World's First Amazon URL sanitizer
+
 https://parsematey.netlify.app/
 
 ![pirate1](https://github.com/lalenguanegra/pasreMatey/blob/main/pirate1.png)
